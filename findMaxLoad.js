@@ -1081,5 +1081,5 @@ const bks = {
     }
   ]
 };
-const findMaxLoad = (bk, length) => bks[bk].find((entry) => length < entry.lt && length >= entry.gte);
+const findMaxLoad = (bk, length) => bks[bk].find((entry) => length < (entry.lt || Number.MAX_SAFE_INTEGER) && length >= (entry.gte || Number.MIN_SAFE_INTEGER));
 console.log(findMaxLoad("bk3", 18.6).maxLoad);
