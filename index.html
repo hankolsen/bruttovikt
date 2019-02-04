@@ -26,7 +26,11 @@
 			</p>
 		</div>
 		<p>
-			<label for="length">Axelavstånd</label>
+			<label for="length">Tjänstevikt i ton</label>
+			<input type="text" name="curbWeight" id="curbWeight" />
+		</p>
+		<p>
+			<label for="length">Avstånd i meter mellan fordonets eller fordonstågets första och sista axel   </label>
 			<input type="text" name="length" id="length" />
 		</p>
 		<p>
@@ -34,9 +38,12 @@
 		</p>
 	</form>
 	<p>
-		Din maxvikt är: <span class="maxLoad"> ton</span>
+		Din maxvikt är: <span class="maxWeight"> ton</span>
+	</p> 
+	<p>
+		Din maximala lastvikt är: <span class="maxLoad"> ton</span>
 	</p> 
 	<script src="main.js"></script>
-	<script src="findMaxLoad.js"></script>
+	<script src="findMaxWeight.js"></script>
 </body>
 </html>
