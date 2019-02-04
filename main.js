@@ -6,7 +6,10 @@ form.addEventListener('submit', (event) => {
 	event.preventDefault();
 	const bkEl = document.querySelector('input[name="bk"]:checked');
 	const bk = bkEl.value;
-	const length = lengthEl.value;
+	let length = lengthEl.value;
+	if (isNaN(length)) {
+		length = parseFloat(length.replace(',', '.'));
+	}
 	const maxLoad = findMaxLoad(bk, length);
 	maxLoadEl.textContent = maxLoad.maxLoad;
 });
