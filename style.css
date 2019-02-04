@@ -1,0 +1,10 @@
+.bk__selector {
+    display: flex;
+}
+
+.bk__selector img {
+    max-width: 100%;
+}
+label {
+    cursor: pointer;
+}
